@@ -1,1 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnServAI - AI-Powered Salesforce Implementation Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #0033A0 0%, #1E88E5 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0033A0, #7F56D9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold"><span class="text-blue-600">EnServ</span><span class="text-purple-600">AI</span></h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a></li>
+                    <li><a href="#ai-agents" class="text-gray-700 hover:text-blue-600 transition duration-300">AI Agents</a></li>
+                    <li><a href="#benefits" class="text-gray-700 hover:text-blue-600 transition duration-300">Benefits</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white px-4 py-2 shadow-md">
+            <ul class="space-y-2">
+                <li><a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">Services</a></li>
+                <li><a href="#ai-agents" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">AI Agents</a></li>
+                <li><a href="#benefits" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">Benefits</a></li>
+                <li><a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Transform Your Salesforce Implementation with AI</h1>
+                    <p class="text-xl mb-8 opacity-90">EnServAI delivers expert-level Salesforce implementations with our autonomous AI-powered Pro Agents, reducing costs by 40% across all SDLC phases.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-white text-blue-700 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold text-center transition duration-300 transform hover:scale-105 shadow-lg">Get Started</a>
+                        <a href="#services" class="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded-lg font-semibold text-center transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-lg opacity-20 transform rotate-3"></div>
+                        <div class="relative bg-white p-8 rounded-lg shadow-xl transform -rotate-2">
+                            <div class="text-center">
+                                <i class="fas fa-robot text-6xl text-blue-600 mb-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Salesforce + AI = EnServAI</h3>
+                                <p class="text-gray-600">Autonomous. Intelligent. Revolutionary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Salesforce Implementation Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">AI-powered solutions for both core and industry clouds in Salesforce.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-sitemap text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Custom Implementation</h3>
+                        <p class="text-gray-600 mb-4">Tailored Salesforce solutions designed to meet your specific business requirements with best practices built in.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Core and industry cloud expertise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>AI-driven architecture planning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Rapid deployment methodology</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="rounded-full bg-purple-100 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Development & Integration</h3>
+                        <p class="text-gray-600 mb-4">Cutting-edge Salesforce development services with AI-powered code generation and testing.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Apex, Lightning, integration development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>API-first design approach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Automated quality assurance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="p-6">
+                        <div class="rounded-full bg-green-100 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-sync-alt text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Migration & Optimization</h3>
+                        <p class="text-gray-600 mb-4">Streamline your transition to Salesforce or optimize your existing implementation.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Data migration and cleansing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Performance optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Enhanced security implementation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section id="ai-agents" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our AI Pro Agents</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Autonomous agents powered by AI, grounded in Salesforce's Well Architected Framework.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <div class="relative p-6 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 shadow-lg">
+                        <div class="absolute -top-5 -right-5 bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold">AI</div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Architecture Pro Agent</h3>
+                        <p class="text-gray-700 mb-4">Our Architecture Agent designs scalable, secure Salesforce solutions that align with business goals and technical requirements.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-shield-alt text-blue-600 mt-1 mr-3"></i>
+                                <span>Enforces platform guard rails and security considerations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-blue-600 mt-1 mr-3"></i>
+                                <span>Optimizes for performance and scalability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-puzzle-piece text-blue-600 mt-1 mr-3"></i>
+                                <span>Creates modular, maintainable designs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative p-6 rounded-xl bg-gradient-to-r from-purple-50 to-blue-50 shadow-lg">
+                        <div class="absolute -top-5 -right-5 bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold">AI</div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Documentation Pro Agent</h3>
+                        <p class="text-gray-700 mb-4">Our Documentation Agent generates comprehensive technical and user documentation for your Salesforce implementation.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-purple-600 mt-1 mr-3"></i>
+                                <span>Creates clear, detailed technical documentation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-users text-purple-600 mt-1 mr-3"></i>
+                                <span>Develops user guides and training materials</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-project-diagram text-purple-600 mt-1 mr-3"></i>
+                                <span>Maintains up-to-date system architecture documents</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative p-6 rounded-xl bg-gradient-to-r from-green-50 to-blue-50 shadow-lg">
+                        <div class="absolute -top-5 -right-5 bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold">AI</div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Code Generation Pro Agent</h3>
+                        <p class="text-gray-700 mb-4">Our Code Generation Agent produces efficient, secure, and maintainable code for your Salesforce customizations.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-code text-green-600 mt-1 mr-3"></i>
+                                <span>Generates optimized Apex, Lightning, and integration code</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lock text-green-600 mt-1 mr-3"></i>
+                                <span>Applies security best practices automatically</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-wrench text-green-600 mt-1 mr-3"></i>
+                                <span>Creates reusable, modular components</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative p-6 rounded-xl bg-gradient-to-r from-red-50 to-blue-50 shadow-lg">
+                        <div class="absolute -top-5 -right-5 bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold">AI</div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Testing Pro Agent</h3>
+                        <p class="text-gray-700 mb-4">Our Testing Agent performs thorough testing to ensure your Salesforce implementation is robust and reliable.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-vial text-red-600 mt-1 mr-3"></i>
+                                <span>Conducts comprehensive unit and integration testing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-user-check text-red-600 mt-1 mr-3"></i>
+                                <span>Performs user acceptance testing scenarios</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-tachometer-alt text-red-600 mt-1 mr-3"></i>
+                                <span>Executes performance and security testing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Unique Approach</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">How we combine AI autonomy with human expertise to deliver exceptional results</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm">
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-white text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 font-bold text-xl">1</div>
+                                <h3 class="text-2xl font-bold">Autonomous AI Agents</h3>
+                            </div>
+                            <p class="ml-14">Our Pro Agents work autonomously to handle complex Salesforce implementation tasks with precision and consistency.</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-white text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 font-bold text-xl">2</div>
+                                <h3 class="text-2xl font-bold">Human-in-the-Loop</h3>
+                            </div>
+                            <p class="ml-14">Experienced Salesforce professionals review AI outputs to ensure quality and alignment with business requirements.</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-white text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 font-bold text-xl">3</div>
+                                <h3 class="text-2xl font-bold">Adversarial Testing</h3>
+                            </div>
+                            <p class="ml-14">Our adversarial agents challenge solutions from different perspectives to identify and resolve potential issues.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <div class="bg-white text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 font-bold text-xl">4</div>
+                                <h3 class="text-2xl font-bold">Continuous Improvement</h3>
+                            </div>
+                            <p class="ml-14">Our AI learns from each project, continually improving outcomes and staying current with Salesforce best practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-xl overflow-hidden shadow-2xl">
+                        <video controls playsinline webkit-playsinline class="w-full">
+                            <source src="https://example.com/enservai-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Business Impact</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Transforming Salesforce implementation with measurable benefits across all SDLC phases.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="p-10 text-center">
+                    <div class="inline-block bg-blue-50 rounded-full px-6 py-2 text-blue-600 font-semibold mb-4">PROVEN RESULTS</div>
+                    <div class="text-7xl font-bold text-blue-600 mb-4">40%</div>
+                    <p class="text-2xl font-semibold mb-2 text-gray-800">Cost Reduction</p>
+                    <p class="text-gray-600">Across all software development lifecycle phases</p>
+                </div>
+                <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <div class="p-8 text-center">
+                        <i class="fas fa-bolt text-yellow-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Faster Delivery</h3>
+                        <p class="text-gray-600">Reduce implementation time from months to weeks</p>
+                    </div>
+                    <div class="p-8 text-center">
+                        <i class="fas fa-shield-alt text-blue-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Enhanced Security</h3>
+                        <p class="text-gray-600">Built-in security guardrails and best practices</p>
+                    </div>
+                    <div class="p-8 text-center">
+                        <i class="fas fa-check-circle text-green-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Higher Quality</h3>
+                        <p class="text-gray-600">Consistent, expert-level outcomes every time</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">65%</div>
+                    <p class="font-medium text-gray-800">Reduction in development time</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">90%</div>
+                    <p class="font-medium text-gray-800">Decrease in security vulnerabilities</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">75%</div>
+                    <p class="font-medium text-gray-800">Reduction in post-deployment issues</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">80%</div>
+                    <p class="font-medium text-gray-800">More comprehensive test coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Real success stories from organizations transforming with EnServAI</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"EnServAI cut our Salesforce implementation time in half while delivering a solution that exceeded our expectations. The AI-driven approach identified optimization opportunities we hadn't considered."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-600">CIO, Global Retail Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The documentation and code quality produced by EnServAI's agents are exceptional. Their human-in-the-loop approach ensures we get AI efficiency with human expertise where it matters most."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm text-gray-600">VP of Technology, FinServ Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The EnServAI team delivered our Healthcare Cloud implementation with impressive speed and quality. Their AI agents' knowledge of industry-specific requirements was a game-changer for us."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Dr. Emily Rodriguez</h4>
+                            <p class="text-sm text-gray-600">CTO, HealthFirst Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Salesforce Implementation?</h2>
+                    <p class="text-xl text-gray-600 mb-8">Contact us today to learn how EnServAI can help you reduce costs and improve outcomes.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <a href="mailto:info@enservai.com" class="text-gray-700 hover:text-blue-600 transition duration-300">info@enservai.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <a href="tel:+18005551234" class="text-gray-700 hover:text-blue-600 transition duration-300">+1 (800) 555-1234</a>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">123 Innovation Way, San Francisco, CA 94105</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Company</label>
+                            <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300 font-medium">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4"><span class="text-white">EnServ</span><span class="text-purple-300">AI</span></h2>
+                    <p class="mb-6 opacity-80">Transforming Salesforce implementation with AI-powered solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Custom Implementation</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Development & Integration</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Migration & Optimization</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Consulting Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">AI Agents</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Architecture Agent</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Documentation Agent</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Code Generation Agent</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Testing Agent</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Company</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-blue-200 transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center opacity-70">
+                <p>&copy; 2023 EnServAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
 
